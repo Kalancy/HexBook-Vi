@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hex Book - Main</title>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" href = "Styles.css">
+</head>
+<body style = "background-color: #201a20; width: 1300px; margin: 50px 50px 50px 30px" id = "Top">
+    <ul style = "list-style-type: none; background-color: #332233; margin: 50px 70px 30px 50px;">
+    <li><img src = "images/HexCastingBanner.png"></li>
+    <li style = "margin-top: -150px;"><h2 style = "display: inline; margin-left: 25%">Toán học</h2><h2 style = "display: inline; margin-left: 17%">Ma pháp</h2></li>
+    <li style = "height: 35px; margin-top: 100px"><p>Nguồn: <a href = "https://www.curseforge.com/minecraft/mc-mods/hexcasting">Curseforge</a> <a href = "https://modrinth.com/mod/hex-casting">Modrinth</a></p>
+    </ul>
+    <table style = "width: 1180px; margin: -30px 50px 50px 50px; border-style: none;" class = "navigator">
+        <tr style = "text-align: center"><td class = "currentpos"><a href = "Main.html">Giới thiệu</a></td><td><a href = "Items.html">Vật phẩm</a></td><td><a href = "Patterns.html">Patterns</a></td><td><a href = "Spells.html">Spells</a></td><td><a href = "Examples.html">Ví dụ</a></td></tr>
+    </table>
+    <div class = "contents">
+        <h2><img src = "images/amethyst_shard.png" alt = "amethyst_shard" width="30px" height="30px">Thông tin cơ bản</h2>
+        <ul style = "list-style-type:disc">
+            <li><p>Ma thuật của Hex bắt nguồn từ <strong>Media</strong>, nguồn năng lượng tồn tại trong quặng <strong>Amethyst</strong> (Thạch anh tím).</p></li>
+            <img src = "images/Geodes.jpg" width = "45%"><img src = "images/Geodes2.jpg" width = "45%" style = "margin-left: 50px;">
+            <p style = "text-align: center;">Mỏ <strong>Amethyst</strong> dưới lòng đất, có lớp vỏ bằng đá basalt và calcite.</p>
+            <li><p><strong>Amethyst</strong> có thể được lưu trữ và sử dụng dưới 3 dạng:</p></li>
+            <p><img src = "images/framed_dust.png" width = "50px"> Bột Amethyst, chứa 1 <strong>Media</strong>.</p>
+            <p><img src = "images/framed_shard.png" width = "50px"> Mảnh Amethyst, chứa 5 <strong>Media</strong>.</p>
+            <p><img src = "images/framed_charged.png" width = "50px"> Tinh thể Amethyst, chứa 10 <strong>Media</strong>.</p>
+        </ul>
+        <h2><img src = "images/oak_staff.png" width = "30px" height = "30px">Cơ chế</h2>
+        <ul style = "list-style-type: disc">
+            <li><p>Ma pháp được cấu tạo từ các <strong>Pattern</strong> (mẫu vẽ), các thuật sư sử dụng 1 loại gậy đặc biệt, có đầu làm bằng <strong>Tinh thể Amethyst</strong>, để vẽ <strong>Pattern</strong> trong không gian.</p></li>
+            <li><h3>Stack</h3></li>
+            <li><p><strong>Stack</strong> là nơi lưu trữ các <strong>Iota</strong>, có thể hiểu là dữ liệu sử dụng cho ma pháp.</p></li>
+            <li><p>Các <strong>Iota</strong> được sắp xếp theo thứ tự sau &rarr; trước.</p></li>
+            <img src = "images/stack.png">
+            <p>Minh họa Stack</p>
+            <li><p>Giống như trong lập trình, <strong>Iota</strong> chia làm nhiều loại:<br>
+                <ul style = "list-style-type: square;" class = "square">
+                    <li>Vector</li>
+                    <li>Number (số)</li>
+                    <li>Entity (thực thể): chỉ các sinh vật, vật phẩm</li>
+                    <li>Pattern (mẫu vẽ)</li>
+                    <li>Boolean (logic): chứa giá trị True (đúng) hoặc False (sai)</li>
+                    <li>Type (loại): phân loại các kiểu dữ liệu</li>
+                    <li>List (danh sách): chứa các <strong>Iota</strong> khác</li>
+                </ul></p></li>
+            <li><p>Các <strong>Pattern</strong> hoạt động theo cơ chế nhận - trả (Kí hiệu: nhận &rarr; trả) các Iota trên Stack.</p></li>
+            <li><h3>Quản lí vật phẩm</h3></li>
+            <li><p>Đối với các ma pháp sử dụng vật phẩm, hệ thống sẽ tự chọn loại vật phẩm bên phải, gần gậy phép nhất</p></li>
+            <li><p>Sau đó, hệ thống tiếp tục chọn vật phẩm cùng loại ở cách xa ô vật phẩm ban đầu nhất để tiêu thụ.</p></li>
+            <p><img src = "images/item_work.png"> Chọn <strong>Bột Amethyst</strong> ở xa nhất</p>
+        </ul>
+    </div>
+    <br><br>
+    <a href = "#Top"><img src = "images/UpArrow.png" style = "position: fixed; right: 2%; bottom: 3%"></a>
+    <p style = "text-align: center;">Nguyễn Đình Khánh - 12C<br>
+    Gmail: khanh2008hihi@gmail.com</p>
+</body>
+</html>
