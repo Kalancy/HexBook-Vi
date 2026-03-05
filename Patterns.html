@@ -19,9 +19,44 @@
         <iframe src= "PatternTable.html" style = "position: sticky; top: 0px; width: 200px; height: 400px">
         </iframe>
         <div style = "margin: -400px 50px 50px 250px">
-            <h2><img src = "images/bookshelf.png">Cơ bản</h2>
-            <ul>
-                
+            <h2 id = "basic"><img src = "images/bookshelf.png" width = "30px" height = "30px">Cơ bản</h2>
+            <ul class = "disc">
+                <li id = "basic/minds">Mind's Reflection</li>
+                <ul class = "square">
+                    <img>
+                    <p> &rarr; entity</p>
+                    <li><p>Thêm bản thân vào Stack.</p></li>
+                </ul>
+                <li id = "basic/compass1">Compass's Purification</li>
+                <ul class = "square">
+                    <img>
+                    <p>entity &rarr; vector</p>
+                    <li><p>Chuyển đổi 1 thực thể thành vị trí mắt của thực thể đó.</p></li>
+                </ul>
+                <li id = "basic/compass2">Compass's Purification II</li>
+                <ul class = "square">
+                    <img>
+                    <p>entity &rarr; vector</p>
+                    <li><p>Chuyển đổi 1 thực thể thành vị trí đứng của thực thể đó.</p></li>
+                </ul>
+                <li id = "basic/alidade">Alidade's Purification</li>
+                <ul class = "square">
+                    <img>
+                    <p>entity &rarr; vector</p>
+                    <li><p>Chuyển đổi 1 thực thể thành vector đơn vị (có độ dài 1), chỉ hướng nhìn của thực thể đó.</p></li>
+                </ul>
+                <li id = "basic/archer">Archer's Distillation</li>
+                <ul class = "square">
+                    <img>
+                    <p>vector, vector &rarr; vector|null</p>
+                    <li><p>Lấy vector đầu tiên làm điểm đầu, vẽ tia có phương và hướng theo vector thứ 2, trả lại vị trí block đầu tiên cắt tia đã vẽ, hoặc null nếu khoảng cách quá 32 block.</p></li>
+                </ul>
+                <li id = "basic/architect">Architect's Distillation</li>
+                <ul class = "square">
+                    <img>
+                    <p>vector, vector &rarr; vector|null</p>
+                    <li><p>Lấy vector đầu tiên làm điểm đầu, vẽ tia có phương và hướng theo vector thứ 2, trả lại vector đơn vị, chỉ mặt của block đầu tiên cắt tia đã vẽ, hoặc null nếu khoảng cách quá 32 block.</p></li>
+                </ul>
             </ul>
         </div>
     </div>
