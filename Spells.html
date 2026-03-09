@@ -84,7 +84,7 @@
                 <ul class = "square">
                     <img>
                     <p>any &rarr; </p>
-                    <li>Làm thực vật ở vị trí chỉ định phảt triển.</li>
+                    <li>Làm thực vật phát triển tại vị trí chỉ định.</li>
                     <li>Tiêu thụ 1 <strong>Media</strong>.</li>
                 </ul>
             </ul>
@@ -125,15 +125,17 @@
                     <li>Có thể dùng lên <strong>Focus</strong>.</li>
                 </ul>
             </ul>
-            <h2><img src = "images/potion_overlay.png" width = "30px" height = "30px">Wisps</h2>
+            <h2><img src = "images/potion_overlay.png" width = "30px" height = "30px">Wisp</h2>
             <ul class = "disc">
                 <li>Wisp (tiên linh) là thực thể được lập trình bằng ma pháp, có thể lưu trữ và sử dụng <strong>Media</strong>.</li>
-                <li id = "wisps/"><h3></h3></li>
+                <li id = "wisps/projectile"><h3>Projectile Wisp</h3></li>
                 <ul class = "square">
                     <img>
-                    <p> &rarr; </p>
-                    <li></li>
-                    <li></li>
+                    <p>[pattern], vector, vector, number &rarr; </p>
+                    <li>Triệu hồi và phóng tiên linh như 1 mũi tên, khi tiếp xúc với vật thể khác, tiên linh sẽ thực hiện Pattern trong danh sách.</li>
+                    <li>Tiên linh trả lại 2 Iota: Bản thân tiên linh và vật nó tiếp xúc (vector nếu là block, entity nếu là thực thể).</li>
+                    <li>Vector đầu tiên chỉ vị trí xuất hiện của tiên linh, vector thứ 2 là hướng và vận tốc di chuyển, số nhận được là lượng Media lưu trữ.</li>
+                    <li>Tiêu thụ 0,3 <strong>Media</strong> mỗi giây tiên linh tồn tại, cộng thêm bình phương vận tốc di chuyển.</li>
                 </ul>
             </ul>
         </div>
