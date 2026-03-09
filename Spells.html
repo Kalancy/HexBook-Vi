@@ -21,7 +21,120 @@
         <div style = "margin: -400px 50px 50px 250px">
             <h2 id = "basicspells"><img src = "images/knowledge_book.png" width = "30px" height = "30px">Cơ bản</h2>
             <ul class = "disc">
-
+                <li id = "basicspells/explosion"><h3>Explosion</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>vector, number &rarr; </p>
+                    <li>Tạo ra vụ nổ ở vị trí chỉ định gây sát thương và phá hủy địa hình xung quanh.</li>
+                    <li>Sức mạnh của vụ nổ tùy theo số nhận được, tiêu thụ 3 <strong>Media</strong> mỗi cấp.</li>
+                </ul>
+                <li id = "basicspells/impulse"><h3>Impulse</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>entity, vector &rarr; </p>
+                    <li>Làm thực thể chỉ định di chuyển theo vector, vận tốc phụ thuộc độ dài vector đó.</li>
+                    <li>Tiêu thụ 1 <strong>Media</strong>, cộng với bình phương vận tốc di chuyển.</li>
+                </ul>
+                <li id = "basicspells/blink"><h3>Blink</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>entity, number &rarr; </p>
+                    <li>Dịch chuyển thực thể n block theo hướng nhìn, với n là số nhận được.</li>
+                    <li>Tiêu thụ 5 <strong>Media</strong> mỗi 2 block dịch chuyển.</li>
+                </ul>
+            </ul>
+            <h2 id = "block"><img src = "images/cobblestone.png">Thao tác tọa độ</h2>
+            <ul class = "disc">
+                <li id = "block/place"><h3>Place Block</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>vector &rarr; </p>
+                    <li>Chọn 1 block trong túi đồ và đặt tại vị trí chỉ định.</li>
+                    <li>Tiêu thụ 1/8 <strong>Media</strong>.</li>
+                </ul>
+                <li id = "block/break"><h3>Break Block</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>vector &rarr; </p>
+                    <li>Phá hủy block tại vị trí chỉ định.</li>
+                    <li>Tiêu thụ 1/8 <strong>Media</strong>.</li>
+                </ul>
+                <li id = "block/water"><h3>Create Water</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>vector &rarr; </p>
+                    <li>Tạo nước tại vị trí chỉ định.</li>
+                    <li>Tiêu thụ 1 <strong>Media</strong>.</li>
+                </ul>
+                <li id = "block/conjureblock"><h3>Conjure Block</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>any &rarr; </p>
+                    <li>Tạo block tại vị trí chỉ định.</li>
+                    <li>Tiêu thụ 1 <strong>Media</strong>.</li>
+                </ul>
+                <li id = "block/light"><h3>Conjure Light</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>any &rarr; </p>
+                    <li>Tạo nguồn sáng tại vị trí chỉ định.</li>
+                    <li>Tiêu thụ 1 <strong>Media</strong>.</li>
+                </ul>
+                <li id = "block/overgrow"><h3>Overgrow</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>any &rarr; </p>
+                    <li>Làm thực vật ở vị trí chỉ định phảt triển.</li>
+                    <li>Tiêu thụ 1 <strong>Media</strong>.</li>
+                </ul>
+            </ul>
+            <h2><img src = "images/smithing_table.png" width = "30px" height = "30px">Chế tạo pháp khí</h2>
+            <ul class = "square">
+                <li id = "crafting/cypher"><h3>Craft Cypher</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>entity, [pattern] &rarr; </p>
+                    <li>Chế tạo Cypher chứa Pattern trong danh sách.</li>
+                    <li>Tiêu thụ 10 <strong>Media</strong>.</li>
+                </ul>
+                <li id = "crafting/trinket"><h3>Craft Trinket</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>entity, [pattern] &rarr; </p>
+                    <li>Chế tạo Trinket chứa Pattern trong danh sách.</li>
+                    <li>Tiêu thụ 50 <strong>Media</strong>.</li>
+                </ul>
+                <li id = "crafting/artifact"><h3>Craft Artifact</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>entity, [pattern] &rarr; </p>
+                    <li>Chế tạo Artifact chứa Pattern trong danh sách.</li>
+                    <li>Tiêu thụ 100 <strong>Media</strong>.</li>
+                </ul>
+                <li id = "crafting/recharge"><h3>Recharge</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>entity &rarr; </p>
+                    <li>Sạc lại <strong>Media</strong> cho vật phẩm cầm trên tay.</li>
+                </ul>
+                <li id = "crafting/erase"><h3>Erase</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p> &rarr; </p>
+                    <li>Xóa thông tin được ghi trong vật phẩm.</li>
+                    <li>Có thể dùng lên <strong>Focus</strong>.</li>
+                </ul>
+            </ul>
+            <h2><img src = "images/potion_overlay.png" width = "30px" height = "30px">Wisps</h2>
+            <ul class = "disc">
+                <li>Wisp (tiên linh) là thực thể được lập trình bằng ma pháp, có thể lưu trữ và sử dụng <strong>Media</strong>.d</li>
+                <li id = "wisps/"><h3></h3></li>
+                <ul class = "square">
+                    <img>
+                    <p> &rarr; </p>
+                    <li></li>
+                    <li></li>
+                </ul>
             </ul>
         </div>
     </div>
