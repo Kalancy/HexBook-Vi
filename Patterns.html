@@ -23,61 +23,61 @@
             <ul class = "disc">
                 <li id = "basic/minds"><h3>Mind's Reflection</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/mind.png">
                     <p> &rarr; entity</p>
                     <li><p>Thêm bản thân vào Stack.</p></li>
                 </ul>
                 <li id = "basic/compass1"><h3>Compass' Purification</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/compass1.png">
                     <p>entity &rarr; vector</p>
                     <li><p>Chuyển đổi 1 thực thể thành vị trí mắt của thực thể đó.</p></li>
                 </ul>
                 <li id = "basic/compass2"><h3>Compass' Purification II</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/compass2.png">
                     <p>entity &rarr; vector</p>
                     <li><p>Chuyển đổi 1 thực thể thành vị trí đứng của thực thể đó.</p></li>
                 </ul>
                 <li id = "basic/alidade"><h3>Alidade's Purification</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/alidade.png">
                     <p>entity &rarr; vector</p>
                     <li><p>Chuyển đổi 1 thực thể thành vector đơn vị (có độ dài 1), chỉ hướng nhìn của thực thể đó.</p></li>
                 </ul>
                 <li id = "basic/archer"><h3>Archer's Distillation</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/archer.png">
                     <p>vector, vector &rarr; vector|null</p>
                     <li><p>Lấy vector đầu tiên làm điểm đầu, vẽ tia có phương và hướng theo vector thứ 2, trả lại vị trí block đầu tiên cắt tia đã vẽ, hoặc null nếu khoảng cách quá 32 block.</p></li>
                 </ul>
                 <li id = "basic/architect"><h3>Architect's Distillation</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/architect.png">
                     <p>vector, vector &rarr; vector|null</p>
                     <li><p>Lấy vector đầu tiên làm điểm đầu, vẽ tia có phương và hướng theo vector thứ 2, trả lại vector đơn vị, chỉ mặt của block đầu tiên cắt tia đã vẽ, hoặc null nếu khoảng cách quá 32 block.</p></li>
                 </ul>
                 <li id = "basic/scout"><h3>Scout's Distillation</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/scout.png">
                     <p>vector, vector &rarr; entity|null</p>
                     <li><p>Lấy vector đầu tiên làm điểm đầu, vẽ tia có phương và hướng theo vector thứ 2, trả lại thực thể đầu tiên cắt tia đã vẽ, hoặc null nếu khoảng cách quá 32 block.</p></li>
                 </ul>
                 <li id = "basic/stadiometer"><h3>Stadiometer's Purification</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/stadiometer.png">
                     <p>entity &rarr; number</p>
                     <li><p>Chuyển đổi 1 thực thể thành chiều cao của thực thể đó.</p></li>
                 </ul>
                 <li id = "basic/pace"><h3>Pace Purification</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/pace.png">
                     <p>entity &rarr; vector</p>
                     <li><p>Chuyển đổi 1 thực thể thành vector vận tốc của thực thể đó.</p></li>
                 </ul>
                 <li id = "basic/reveal"><h3>Reveal</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/reveal.png">
                     <p>any &rarr; any</p>
                     <li><p>Hiển thị Iota đầu tiên trên Stack.</p></li>
                 </ul>
@@ -87,7 +87,7 @@
                 <li id = "math/number"><h3>Biểu diễn số học</h3></li>
                 <ul class = "square">
                     <li>Trong Hex Casting, các số có thể được biểu diễn bằng Pattern:</li>
-                    <p><img>Số dương<img>Số âm</p>
+                    <p><img src = "images/patterns/positive.png">Số dương<img src = "images/patterns/negative.png">Số âm</p>
                     <li><p>Sau đó tùy vào cách vẽ để quyết định số:<br>
                     <ul class = "circle">
                         <li>Đi thẳng: Thêm 1 (hoặc trừ nếu là số âm)</li>
@@ -98,14 +98,14 @@
                     </ul></p></li>
                     <li>Ví dụ:
                     <ul class = "circle">
-                        <li><img>Trả lại số 10</li>
-                        <li><img>Trả lại số 4</li>
-                        <li><img>Trả lại số 36</li>
+                        <li><img src = "images/patterns/10.png">Trả lại số 10</li>
+                        <li><img src = "images/patterns/4.png">Trả lại số 4</li>
+                        <li><img src = "images/patterns/36.png">Trả lại số 36</li>
                     </ul></li>
                 </ul>
                 <li id = "math/add"><h3>Additive Distillation</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/add.png">
                     <p>number|vector|list, number|vector|list &rarr; number|vector|list</p>
                     <li>Thực hiện phép cộng:
                     <ul class = "circle">
@@ -118,7 +118,7 @@
                 </ul>
                 <li id = "math/sub"><h3>Subtractive Distillation</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/sub.png">
                     <p>number|vector|list, number|vector &rarr; number|vector</p>
                     <li>Thực hiện phép trừ:
                     <ul class = "circle">
@@ -130,7 +130,7 @@
                 </ul>
                 <li id = "math/mult"><h3>Multiplicative Distillation</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/mult.png">
                     <p>number|vector, number|vector &rarr; number|vector</p>
                     <li>Thực hiện phép nhân:
                     <ul class = "circle">
@@ -142,7 +142,7 @@
                 </ul>
                 <li id = "math/div"><h3>Division Distillation</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/div.png">
                     <p>number|vector, number|vector &rarr; number|vector</p>
                     <li>Thực hiện phép chia:
                     <ul class = "circle">
@@ -157,7 +157,7 @@
             <ul class = "disc">
                 <li id = "info/bookkeeper"><h3>Bookkeeper's Gambit</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/bookkeeper.png">
                     <p>many &rarr; manyy</p>
                     <li>Xóa các Iota trong Stack tùy theo cách vẽ:
                     <ul class = "circle">
@@ -168,19 +168,19 @@
                 </ul>
                 <li id = "info/jester"><h3>Jester's Gambit</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/jester.png">
                     <p>any, any &rarr; any, any</p>
                     <li><p>Đảo vị trí 2 Iota đầu tiên.</p></li>
                 </ul>
                 <li id = "info/geminidec"><h3>Gemini's Decomposition</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/geminidec.png">
                     <p>any &rarr; any, any</p>
                     <li><p>Tạo 1 bản sao của Iota đầu tiên.</p></li>
                 </ul>
                 <li id = "info/geminigam"><h3>Gemini's Gambit</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/geminigam.png">
                     <p>any, number &rarr; many</p>
                     <li><p>Nhận 1 số và 1 Iota, rồi nhân bản Iota đó n lần (n là số đã nhận).</p></li>
                 </ul>
@@ -198,33 +198,33 @@
                 </ul>
                 <li id = "info/hermes"><h3>Hermes' Gambit</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/hermes.png">
                     <p>[pattern]|pattern &rarr; many</p>
                     <li>Thực hiện Pattern (hoặc danh sách Pattern) đầu tiên trên Stack, như thể người dùng vừa tự vẽ chúng.</li>
                     <li>Có thể kết hợp với Focus để tái sử dụng phép thuật.</li>
                 </ul>
                 <li id = "info/thoth"><h3>Thoth's Gambit</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/thoth.png">
                     <p>[pattern], list &rarr; many</p>
                     <li>Thực hiên Pattern trong danh sách với mỗi phần tử của danh sách thứ 2.</li>
                     <li>Cụ thể, hệ thống sẽ liên tục nhân bản danh sách Pattern, đặt từng phần tử của danh sách còn lại vào đầu danh sách Pattern, sau đó thực hiện như <strong>Hermes's Gambit</strong>.</li>
                 </ul>
                 <li id = "info/consideration"><h3>Consideration</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/consideration.png">
                     <p> &rarr; </p>
                     <li>Chuyển đổi Pattern được vẽ sau nó thành Iota và lưu trên Stack.</li>
                 </ul>
                 <li id = "info/introspection"><h3>Introspection</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/introspection.png">
                     <p> &rarr; </p>
                     <li>Kết hợp với <strong>Retrospection</strong> tạo danh sách Iota.</li>
                 </ul>
                 <li id = "info/consideration"><h3>Consideration</h3></li>
                 <ul class = "square">
-                    <img>
+                    <img src = "images/patterns/retrospection.png">
                     <p> &rarr; </p>
                     <li>Kết hợp với <strong>Introspection</strong> tạo danh sách Iota.</li>
                 </ul>
