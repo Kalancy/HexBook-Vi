@@ -81,6 +81,143 @@
                     <p>any &rarr; any</p>
                     <li><p>Hiển thị Iota đầu tiên trên Stack.</p></li>
                 </ul>
+                <li id = "basic/"><h3></h3></li>
+                
+                <li id = "basic/"><h3></h3></li>
+                <ul class = "square">
+                    <img>
+                    <p> &rarr; </p>
+                    <li><p></p></li>
+                </ul>
+            </ul>
+            <h2 id = "math"><img src = "images/blaze_rod.png" width="30px" height = "30px">Toán học</h2>
+            <ul class = "disc">
+                <li id = "math/number"><h3>Biểu diễn số học</h3></li>
+                <ul class = "square">
+                    <li>Trong Hex Casting, các số có thể được biểu diễn bằng Pattern:</li>
+                    <p><img>Số dương<img>Số âm</p>
+                    <li><p>Sau đó tùy vào cách vẽ để quyết định số:<br>
+                    <ul class = "circle">
+                        <li>Đi thẳng: Thêm 1 (hoặc trừ nếu là số âm)</li>
+                        <li>Sang trái: Thêm 5</li>
+                        <li>Sang phải: Thêm 10</li>
+                        <li>Lùi sang trái: Nhân đôi</li>
+                        <li>Lùi sang phải: Chia đôi</li>
+                    </ul></p></li>
+                    <li>Ví dụ:
+                    <ul class = "circle">
+                        <li><img>Trả lại số 10</li>
+                        <li><img>Trả lại số 4</li>
+                        <li><img>Trả lại số 36</li>
+                    </ul></li>
+                </ul>
+                <li id = "math/add"><h3>Additive Distillation</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>number|vector|list, number|vector|list &rarr; number|vector|list</p>
+                    <li>Thực hiện phép cộng:
+                    <ul class = "circle">
+                        <li>Khi đầu vào là 2 số, thực hiện cộng 2 số đó.</li>
+                        <li>Khi đầu vào là 2 vector, thực hiện cộng vector.</li>
+                        <li>Khi đầu vào có 1 số, 1 vector, cộng số đó vào từng giá trị x, y, z của vector.</li>
+                        <li>Khi đầu vào là 2 danh sách, nối danh sách sau vào cuối danh sách trước.</li>
+                    </ul>
+                    </li>
+                </ul>
+                <li id = "math/sub"><h3>Subtractive Distillation</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>number|vector|list, number|vector &rarr; number|vector</p>
+                    <li>Thực hiện phép trừ:
+                    <ul class = "circle">
+                        <li>Khi đầu vào là 2 số, lấy số thứ 2 trong Stack trừ đi số đầu tiên.</li>
+                        <li>Khi đầu vào là 2 vector, lấy vector thứ 2 trong Stack trừ đi vector đầu tiên.</li>
+                        <li>Khi đầu vào có 1 số, 1 vector, lấy từng giá trị x, y, z trừ đi số đó.</li>
+                    </ul>
+                    </li>
+                </ul>
+                <li id = "math/mult"><h3>Multiplicative Distillation</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>number|vector, number|vector &rarr; number|vector</p>
+                    <li>Thực hiện phép nhân:
+                    <ul class = "circle">
+                        <li>Khi đầu vào là 2 số, thực hiện nhân 2 số đó.</li>
+                        <li>Khi đầu vào là 2 vector, tính <strong>tích vô hướng</strong> của chúng.</li>
+                        <li>Khi đầu vào có 1 số, 1 vector, lấy từng giá trị x, y, z của vector nhân với số đó.</li>
+                    </ul>
+                    </li>
+                </ul>
+                <li id = "math/div"><h3>Division Distillation</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>number|vector, number|vector &rarr; number|vector</p>
+                    <li>Thực hiện phép chia:
+                    <ul class = "circle">
+                        <li>Khi đầu vào là 2 số, lấy số thứ 2 trong Stack chia cho số đầu tiên.</li>
+                        <li>Khi đầu vào là 2 vector, tính <strong>tích có hướng</strong> của chúng.</li>
+                        <li>Khi đầu vào có 1 số, 1 vector, lấy từng giá trị x, y, z của vector chia cho số đó.</li>
+                    </ul>
+                    </li>
+                </ul>
+            </ul>
+            <h2 id = "info"><img src = "images/writable_book.png" width = "30px" height = "30px">Thao tác thông tin</h2>
+            <ul class = "disc">
+                <li id = "info/bookkeeper"><h3>Bookkeeper's Gambit</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>many &rarr; manyy</p>
+                    <li>Xóa các Iota trong Stack tùy theo cách vẽ:
+                    <ul class = "circle">
+                        <li>Đọc Stack từ dưới lên trên.</li>
+                        <li>Gặp nét ngang thì giữ lại Iota ở vị trí đó.</li>
+                        <li>Gặp nét gấp khúc thì xóa Iota ở vị trí đó.</li>
+                    </ul></li>
+                </ul>
+                <li id = "info/jester"><h3>Jester's Gambit</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>any, any &rarr; any, any</p>
+                    <li><p>Đảo vị trí 2 Iota đầu tiên.</p></li>
+                </ul>
+                <li id = "info/geminidec"><h3>Gemini's Decomposition</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>any &rarr; any, any</p>
+                    <li><p>Tạo 1 bản sao của Iota đầu tiên.</p></li>
+                </ul>
+                <li id = "info/geminigam"><h3>Gemini's Gambit</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>any, number &rarr; many</p>
+                    <li><p>Nhận 1 số và 1 Iota, rồi nhân bản Iota đó n lần (n là số đã nhận).</p></li>
+                </ul>
+                <li id = "info/write"><h3>Scribe's Gambit</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>any &rarr; </p>
+                    <li><p>Ghi Iota đầu tiên của Stack vào vật phẩm bên tay còn lại (Thường là Focus).</p></li>
+                </ul>
+                <li id = "info/read"><h3>Scribe's Reflection</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p> &rarr; any</p>
+                    <li><p>Đọc Iota được ghi trong vật phẩm (Thường là Focus).</p></li>
+                </ul>
+                <li id = "info/hermes"><h3>Hermes's Gambit</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>[pattern]|pattern &rarr; many</p>
+                    <li>Thực hiện Pattern (hoặc danh sách Pattern) đầu tiên trên Stack, như thể người dùng vừa tự vẽ chúng.</li>
+                    <li>Có thể kết hợp với Focus để tái sử dụng phép thuật.</li>
+                </ul>
+                <li id = "info/thoth"><h3>Thoth's Gambit</h3></li>
+                <ul class = "square">
+                    <img>
+                    <p>[pattern], list &rarr; many</p>
+                    <li>Thực hiên Pattern trong danh sách với mỗi phần tử của danh sách thứ 2.</li>
+                    <li>Cụ thể, hệ thống sẽ liên tục nhân bản danh sách Pattern, đặt từng phần tử của danh sách còn lại vào đầu danh sách Pattern, sau đó thực hiện như <strong>Hermes's Gambit</strong>.</li>
+                </ul>
             </ul>
         </div>
     </div>
@@ -88,7 +225,12 @@
     <a href = "#Top"><img src = "images/UpArrow.png" style = "position: fixed; right: 2%; bottom: 3%"></a>
     <p style = "text-align: center;">Nguyễn Đình Khánh - 12C<br>
     Gmail: pfskhanh7070@gmail.com</p>
+    <li id = "basic/"><h3></h3></li>
+                <ul class = "square">
+                    <img>
+                    <p> &rarr; </p>
+                    <li><p></p></li>
+                </ul>
 </body>
-
 </html>
 
