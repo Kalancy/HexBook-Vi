@@ -22,11 +22,56 @@
             <h2 id = "raycastmantra"><img src = "images/knowledge_book.png" width = "30px" height = "30px">Raycast Mantra</h2>
             <ul class = "disc; spells">
                 <li>Đây là phép thuật cơ bản nhất, dùng để lấy tọa độ hoặc thực thể người dùng đang nhìn.</li>
-                <li>Công thức</li>
+                <li>Công thức:</li>
                 <p><img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_compass1.png"><img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_alidade.png"><img src = "images/patterns/s_archer.png"> Tọa độ<br>
                 <img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_compass1.png"><img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_alidade.png"><img src = "images/patterns/s_scout.png"> Thực thể</p>
                 <video src = "videos/RaycastMantra.mp4" controls></video>
             </ul>
+            <h2 id = "simple"><img src = "images/edified.png" width = "30px" height = "30px">Phép đơn ấn</h2>
+            <ul class = "disc; spells">
+                <li id = "simple/break"><h3>Break Block</h3></li>
+                <ul class = "square">
+                    <li>Ứng dụng <strong>Raycast Mantra</strong> để phá block từ xa.</li>
+                    <li>Công thức:</li>
+                    <img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_compass1.png"><img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_alidade.png"><img src = "images/patterns/s_archer.png"><img src = "images/patterns/s_break.png">
+                    <video src = "videos/BreakBlock.mp4" controls></video>
+                </ul>
+                <li id = "simple/explosion"><h3>Explosion</h3></li>
+                <ul class = "square">
+                    <li>Tạo vụ nổ cấp 2 tại vị trí đầu thực thể đang nhìn.</li>
+                    <li>Công thức:</li>
+                    <img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_compass1.png"><img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_alidade.png"><img src = "images/patterns/s_scout.png"><img src = "images/patterns/s_2.png"><img src = "images/patterns/s_explosion.png">
+                    <video src = "videos/EntityExplosion.mp4" controls></video>
+                </ul>
+                <li id = "simple/leap"><h3>Leap</h3></li>
+                <ul class = "square">
+                    <li>Phóng người dùng theo hướng nhìn với vận tốc 2 block/s.</li>
+                    <li>Công thức:</li>
+                    <img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_alidade.png"><img src = "images/patterns/s_2.png"><img src = "images/patterns/s_mult.png"><img src = "images/patterns/s_impulse.png">
+                    <video src = "videos/Leap.mp4" controls></video>
+                </ul>
+                <li id = "simple/magelight"><h3>Mage Light<h3></li>
+                <ul class = "square">
+                    <li>Tạo nguồn sáng tại vị trí nhìn.</li>
+                    <li>Cơ chế:</li>
+                    <ul class = "circle">
+                        <li><strong>Archer's Distillation</strong> trả lại tọa độ block đang nhìn.</li>
+                        <li><strong>Architect's Distillation</strong> trả lại mặt của block đó (do ta cần đặt nguồn sáng liền kề block).</li>
+                        <li>Cộng 2 vector trên ta được vị trí cần đặt.</li>
+                    </ul>
+                    <li>Công thức:</li>
+                    <img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_compass1.png"><img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_alidade.png"><img src = "images/patterns/s_archer.png"><img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_compass1.png"><img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_alidade.png"><img src = "images/patterns/s_architect.png"><img src = "images/patterns/s_add.png"><img src = "images/patterns/s_light.png">
+                    <video src = "videos/MageLight.mp4" controls></video>
+                </ul>
+                <li id = "simple/phasewall"><h3>Phase Wall</h3></li>
+                <ul class = "square">
+                    <li>Ứng dụng <strong>Blink</strong> để đi xuyên vật cản.</li>
+                    <li>Công thức:</li>
+                    <img src = "images/patterns/s_mind.png"><img src = "images/patterns/s_4.png"><img src = "images/patterns/s_blink.png">
+                    <video src = "videos/MageLight.mp4" controls></video>
+                </ul>
+            </ul>
+            <h2 id = "complex">Phép đa ấn</h2>
         </div>
     </div>
     <a href = "#Top"><img src = "images/UpArrow.png" style = "position: fixed; right: 2%; bottom: 3%"></a>
