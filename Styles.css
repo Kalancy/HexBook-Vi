@@ -20,3 +20,4 @@ ul.circle {list-style-type: circle}
 .bluelink a {color: #5881cc}
 .bluelink a:hover {text-decoration-color: skyblue}
 ul.spells img {width: 80px; height: 80px}
+ul.spells video {width: 80%}
