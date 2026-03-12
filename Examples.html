@@ -71,9 +71,9 @@
                     <video src = "videos/PhaseWall.mp4" controls></video>
                 </ul>
             </ul>
-            <h2 id = "complex">Phép đa ấn</h2>
+            <h2 id = "complex"><img src = "images/nether_star.png" width= "30px" height = "30px">Phép đa ấn</h2>
             <ul class = "disc; spells">
-                <li id = "simple/shovemonster"><h3>Shove Monster</h3></li>
+                <li id = "complex/shovemonster"><h3>Shove Monster</h3></li>
                 <ul class = "square">
                     <li>Tạo 1 <strong>Trinket</strong> có khả năng đẩy lùi thực thể trước mặt.</li>
                     <li>Công thức:</li>
@@ -81,9 +81,16 @@
                     <video src = "videos/ShoveMonster.mp4" controls></video>
                     <video src = "videos/ShoveHusk.mp4" controls></video>       
                 </ul>
-                <li id = "simple/safeexplosion"><h3>Safe Explosion</h3></li>
+                <li id = "complex/safeexplosion"><h3>Safe Explosion</h3></li>
                 <ul class = "square">
                     <li>Bắn 1 tiên linh gây nổ, nhưng không phá hủy địa hình</li>
+                    <li>Cơ chế:</li>
+                    <ul class = "circle">
+                        <li>Tiên linh trả lại 2 Iota, <strong>Bookkeeper's Gambit</strong> giữ lại Iota đầu tiên, là entity/tiên linh.</li>
+                        <li>Dùng Iota có được chuyển thành vector vị trí và hướng di chuyển của tiên linh ngay khi va chạm.</li>
+                        <li>Do <strong>Create Water</strong> chỉ hoạt động trong không gian trống (không có block khác ngoài không khí), cộng 2 vector trên ta được vị trí phù hợp.</li>
+                        <li>Sau đó, tiên linh thực hiện lần lượt 4 phép: tạo nước (ngăn vụ nổ phá hủy địa hình), nổ, tạo block (phá nguồn nước vừa tạo), phá block vừa tạo.</li>
+                    </ul>
                     <li>Công thức:</li>
                     <video src = "videos/SafeExplosiveShot.mp4" controls></video>       
                 </ul>
